@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My Portfolio</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script> 
+        <script src="https://kit.fontawesome.com/5787f61412.js" crossorigin="anonymous"></script>
+    </head>    
+<body>
+   <div id="header">
+     <div class="container">  
+        <nav>
+            <img src="images/emmyboi.jpeg" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Service</a></li>
+                <li><a href="#portfoilo">Portfoilo</a></li>
+                <li><a href="#contact">Contact</a></li>
+                 <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Web Developer</p>
+            <h1>Hi, i'm <span>Emmanuel</span><br>A Passionate Web Developer</h1>
+        </div>
+     </div>
+   </div> 
+
+
+   <!----about---->
+   <div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/picture.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I'm a <strong>junior web developer</strong> passionate about building clean and responsive user interfaces.
+                    I specialize in front-end development using <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>,
+                     and I love turning ideas into visually appealing, functional websites.
+                    I'm always learning and exploring modern front-end tools to improve my craft and deliver better user experiences.
+                     Whether it's styling with CSS or adding interactivity with JavaScript, I enjoy every step of the creative coding process.
+                    </p>
+
+                   <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                   </div>
+                   <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML & CSS</span><br>Building clean, responsive layouts</li>
+                        <li><span>UI Design</span><br>Designing user-friendly web interfaces</li>
+                        <li><span>Responsive Design</span><br>Optimizing websites for all devices</li>
+                        <!-- <li><span>App Development</span><br>Building Android/ios Apps</li> -->
+                    </ul>
+                   </div>
+
+                   <div class="tab-contents" id="experience">
+                  <ul class="space-y-6">
+    <li>
+      <h3>Junior Front-End Developer (Freelance)</h3>
+      <span>2024 – Present</span>
+      <p>
+        Designed and developed responsive websites using HTML, CSS, and JavaScript. Built landing page, improved UI/UX.
+      </p>
+    </li>
+    <li>
+      <h3>Personal Projects & Learning</h3>
+      <span>2024 - present</span>
+      <p>
+        Created various front-end projects to practice and refine core development skills, including forms, layouts, and interactive components.
+      </p>
+    </li>
+    <li>
+      <h3>Continuous Learning</h3>
+      <span>Ongoing</span>
+      <p>
+        Expanding knowledge by learning modern front-end tools such as Tailwind CSS, Git, and React.
+      </p>
+    </li>
+  </ul>
+                   </div>
+
+            </div>
+        </div>
+    </div>
+   </div>
+   <!-- --------services--------- -->
+   <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-mobile-alt"></i>
+                <h2 style="font-weight: 600;">Responsive Website Design</h2>
+                <p>I build websites that automatically adjust and look great on all devices—phones, tablets, and desktops. 
+                   I use flexible layouts and media queries to ensure a smooth, consistent user experience across screen sizes.</p>
+                   <!-- <a href="#">learn more</a> -->
+            </div>
+            <div>
+               <i class="fas fa-file-alt"></i>
+                <h2 style="font-weight: 600;"> Landing Page Development</h2>
+                <p>I design and build attractive, functional landing pages tailored to highlight a product, service, or goal. 
+                   Whether it’s for a portfolio, marketing campaign, or startup idea, I focus on clarity, performance, and conversion.</p>
+                   <!-- <a href="#">learn more</a> -->
+            </div>
+        </div>  
+    </div>
+</div>
+<!-- ---------portfolio--------- -->
+ <div id="Portfoilo">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/portfolio.jpeg">
+                <div class="layer">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio website showcasing my skills, projects, and experience as a Full Stack Developer.
+                     Built with HTML, CSS, JavaScript, and responsive design principles to ensure a smooth user experience across devices.</p>
+                     <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/real estate.jpeg">
+                <div class="layer">
+                    <h3>Real estate</h3>
+                    <p>A modern real estate listing platform developed to display property details with images, pricing, and contact forms.
+                     Created using HTML, CSS, React and JavaScript, with a focus on user-friendly navigation and responsive layout for seamless browsing on any device.</p>
+                     <a href="https://real-estate-bice-kappa.vercel.app/"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/yoga.jpeg">
+                <div class="layer">
+                    <h3>Yoga Website</h3>
+                    <p>A calming and responsive website designed for a yoga studio to showcase classes, schedules, and instructor profiles.
+                     Built with HTML, CSS, React and JavaScript, focusing on clean aesthetics, intuitive navigation, and mobile-friendly layout.</p>
+                     <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#"></a>
+    </div>
+ </div>
+
+    <!-- ---------contact--------- -->
+    <div id="contact">
+        <div class="container">
+           <div class="row">
+             <div class="contact-left">
+                <h1 class="sub-title">contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i>contact@example.com</p>
+                <p><i class="fas fa-phone-square-alt"></i>0902561879</p>
+                <div class="social-icons">
+                    <a href=""><i class="fab fa-facebook"></i></a>
+                    <a href=""><i class="fab fa-twitter-square"></i></a>
+                    <a href=""><i class="fab fa-linkedin"></i></a>
+                    <a href=""><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <a href="" download class="btn btn2">Download CV</a>
+             </div>
+             <div class="contact-right">
+               <form action="https://api.web3forms.com/submit" method="POST">
+  <!-- Web3Forms Access Key -->
+  <input type="hidden" name="access_key" value="f73d8f9b-b7da-49e3-b13b-004154bda42f">
+
+  <!-- Optional: Name for sender identification -->
+  <input type="hidden" name="from_name" value="My Portfolio Site">
+
+  <!-- Contact Fields -->
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="email" name="email" placeholder="Your Email" required>
+  <textarea name="message" rows="6" placeholder="Your Message" required></textarea>
+
+  <!-- Submit Button -->
+  <button type="submit" class="btn btn2">Submit</button>
+</form>
+
+             </div>
+           </div>    
+        </div>
+        <div class="copyright">
+           <p>&copy; Emmanuel. All<i class="fas fa-heart"></i> rights reserved.</p>
+        </div>
+    </div>
+
+
+
+
+
+   <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+   </script>
+
+
+   <script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+   </script>
+</body>
+</html>
+
+f73d8f9b-b7da-49e3-b13b-004154bda42f
